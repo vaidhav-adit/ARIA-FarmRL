@@ -1,0 +1,122 @@
+ARIA / RL_PPT training — FarmEnvPPT (phased weather + slide reward table)
+Episodes per agent: 500
+
+
+==================================================
+Training: Q-Learning
+==================================================
+  Ep   50 | avg_reward=-316.8308 | avg_water=44.1 | avg_dev=0.5206 | stats=0.7783
+  Ep  100 | avg_reward=-301.0313 | avg_water=41.1 | avg_dev=0.5095 | stats=0.6058
+  Ep  150 | avg_reward=-283.3625 | avg_water=37.1 | avg_dev=0.5004 | stats=0.4715
+  Ep  200 | avg_reward=-281.8993 | avg_water=36.0 | avg_dev=0.5077 | stats=0.367
+  Ep  250 | avg_reward=-275.3902 | avg_water=34.5 | avg_dev=0.4983 | stats=0.2856
+  Ep  300 | avg_reward=-272.7321 | avg_water=32.3 | avg_dev=0.5072 | stats=0.2223
+  Ep  350 | avg_reward=-264.3914 | avg_water=30.8 | avg_dev=0.4998 | stats=0.173
+  Ep  400 | avg_reward=-271.8743 | avg_water=31.9 | avg_dev=0.5040 | stats=0.1347
+  Ep  450 | avg_reward=-277.3130 | avg_water=32.0 | avg_dev=0.5185 | stats=0.1048
+  Ep  500 | avg_reward=-261.1727 | avg_water=29.6 | avg_dev=0.4938 | stats=0.0816
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/q-learning.json
+
+==================================================
+Training: SARSA
+==================================================
+  Ep   50 | avg_reward=-311.8120 | avg_water=43.1 | avg_dev=0.5167 | stats=0.7783
+  Ep  100 | avg_reward=-303.8404 | avg_water=42.2 | avg_dev=0.5147 | stats=0.6058
+  Ep  150 | avg_reward=-287.2088 | avg_water=37.6 | avg_dev=0.5085 | stats=0.4715
+  Ep  200 | avg_reward=-287.0293 | avg_water=37.3 | avg_dev=0.5114 | stats=0.367
+  Ep  250 | avg_reward=-275.3320 | avg_water=34.3 | avg_dev=0.5023 | stats=0.2856
+  Ep  300 | avg_reward=-272.8640 | avg_water=32.8 | avg_dev=0.5032 | stats=0.2223
+  Ep  350 | avg_reward=-267.2969 | avg_water=31.7 | avg_dev=0.5014 | stats=0.173
+  Ep  400 | avg_reward=-269.3490 | avg_water=31.5 | avg_dev=0.5053 | stats=0.1347
+  Ep  450 | avg_reward=-261.0405 | avg_water=28.8 | avg_dev=0.4951 | stats=0.1048
+  Ep  500 | avg_reward=-271.5468 | avg_water=30.5 | avg_dev=0.5199 | stats=0.0816
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/sarsa.json
+
+==================================================
+Training: DQN
+==================================================
+  Ep   50 | avg_reward=-316.0484 | avg_water=43.2 | avg_dev=0.5263 | stats=0.7783
+  Ep  100 | avg_reward=-300.0009 | avg_water=38.4 | avg_dev=0.5301 | stats=0.6058
+  Ep  150 | avg_reward=-274.3647 | avg_water=33.4 | avg_dev=0.5124 | stats=0.4715
+  Ep  200 | avg_reward=-255.1410 | avg_water=27.0 | avg_dev=0.5133 | stats=0.367
+  Ep  250 | avg_reward=-248.2018 | avg_water=25.0 | avg_dev=0.5077 | stats=0.2856
+  Ep  300 | avg_reward=-240.9300 | avg_water=23.1 | avg_dev=0.5015 | stats=0.2223
+  Ep  350 | avg_reward=-236.8246 | avg_water=23.1 | avg_dev=0.4963 | stats=0.173
+  Ep  400 | avg_reward=-229.5031 | avg_water=22.3 | avg_dev=0.4849 | stats=0.1347
+  Ep  450 | avg_reward=-229.5412 | avg_water=22.5 | avg_dev=0.4856 | stats=0.1048
+  Ep  500 | avg_reward=-226.4741 | avg_water=21.5 | avg_dev=0.4857 | stats=0.0816
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/dqn.json
+
+==================================================
+Training: REINFORCE-vanilla
+==================================================
+  Ep   50 | avg_reward=-326.4863 | avg_water=46.4 | avg_dev=0.5231 | stats=vanilla
+  Ep  100 | avg_reward=-324.6084 | avg_water=45.3 | avg_dev=0.5236 | stats=vanilla
+  Ep  150 | avg_reward=-328.5312 | avg_water=45.9 | avg_dev=0.5303 | stats=vanilla
+  Ep  200 | avg_reward=-323.6078 | avg_water=44.5 | avg_dev=0.5280 | stats=vanilla
+  Ep  250 | avg_reward=-322.9242 | avg_water=45.6 | avg_dev=0.5235 | stats=vanilla
+  Ep  300 | avg_reward=-328.9378 | avg_water=47.3 | avg_dev=0.5267 | stats=vanilla
+  Ep  350 | avg_reward=-325.1858 | avg_water=45.5 | avg_dev=0.5273 | stats=vanilla
+  Ep  400 | avg_reward=-325.5035 | avg_water=46.1 | avg_dev=0.5236 | stats=vanilla
+  Ep  450 | avg_reward=-327.6688 | avg_water=46.0 | avg_dev=0.5322 | stats=vanilla
+  Ep  500 | avg_reward=-326.7862 | avg_water=45.4 | avg_dev=0.5312 | stats=vanilla
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/reinforce-vanilla.json
+
+==================================================
+Training: REINFORCE-baseline
+==================================================
+  Ep   50 | avg_reward=-313.1982 | avg_water=37.8 | avg_dev=0.5458 | stats=with_baseline
+  Ep  100 | avg_reward=-302.3792 | avg_water=28.7 | avg_dev=0.5575 | stats=with_baseline
+  Ep  150 | avg_reward=-337.0438 | avg_water= 3.9 | avg_dev=0.6449 | stats=with_baseline
+  Ep  200 | avg_reward=-349.6644 | avg_water= 0.1 | avg_dev=0.6673 | stats=with_baseline
+  Ep  250 | avg_reward=-349.4396 | avg_water= 0.0 | avg_dev=0.6665 | stats=with_baseline
+  Ep  300 | avg_reward=-349.6380 | avg_water= 0.0 | avg_dev=0.6668 | stats=with_baseline
+  Ep  350 | avg_reward=-349.6951 | avg_water= 0.1 | avg_dev=0.6673 | stats=with_baseline
+  Ep  400 | avg_reward=-349.5168 | avg_water= 0.0 | avg_dev=0.6670 | stats=with_baseline
+  Ep  450 | avg_reward=-349.5895 | avg_water= 0.0 | avg_dev=0.6669 | stats=with_baseline
+  Ep  500 | avg_reward=-349.8244 | avg_water= 0.0 | avg_dev=0.6673 | stats=with_baseline
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/reinforce-baseline.json
+
+==================================================
+Training: Actor-Critic
+==================================================
+  Ep   50 | avg_reward=-408.7249 | avg_water=63.2 | avg_dev=0.5714 | stats=-
+  Ep  100 | avg_reward=-502.5207 | avg_water=89.8 | avg_dev=0.5940 | stats=-
+  Ep  150 | avg_reward=-503.4025 | avg_water=89.9 | avg_dev=0.5962 | stats=-
+  Ep  200 | avg_reward=-503.8018 | avg_water=90.0 | avg_dev=0.5969 | stats=-
+  Ep  250 | avg_reward=-503.5858 | avg_water=90.0 | avg_dev=0.5958 | stats=-
+  Ep  300 | avg_reward=-503.5201 | avg_water=90.0 | avg_dev=0.5956 | stats=-
+  Ep  350 | avg_reward=-503.6655 | avg_water=90.0 | avg_dev=0.5965 | stats=-
+  Ep  400 | avg_reward=-503.6076 | avg_water=90.0 | avg_dev=0.5960 | stats=-
+  Ep  450 | avg_reward=-503.3697 | avg_water=90.0 | avg_dev=0.5952 | stats=-
+  Ep  500 | avg_reward=-503.9215 | avg_water=90.0 | avg_dev=0.5972 | stats=-
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/actor-critic.json
+
+==================================================
+Training: PPO
+==================================================
+  Ep   50 | avg_reward=-327.2533 | avg_water=44.9 | avg_dev=0.5340 | stats=-
+  Ep  100 | avg_reward=-323.8692 | avg_water=42.3 | avg_dev=0.5350 | stats=-
+  Ep  150 | avg_reward=-330.4395 | avg_water=44.9 | avg_dev=0.5359 | stats=-
+  Ep  200 | avg_reward=-325.7487 | avg_water=44.6 | avg_dev=0.5371 | stats=-
+  Ep  250 | avg_reward=-314.4593 | avg_water=43.2 | avg_dev=0.5198 | stats=-
+  Ep  300 | avg_reward=-324.7491 | avg_water=45.0 | avg_dev=0.5301 | stats=-
+  Ep  350 | avg_reward=-325.5002 | avg_water=44.5 | avg_dev=0.5329 | stats=-
+  Ep  400 | avg_reward=-319.1936 | avg_water=42.7 | avg_dev=0.5310 | stats=-
+  Ep  450 | avg_reward=-325.2764 | avg_water=43.4 | avg_dev=0.5393 | stats=-
+  Ep  500 | avg_reward=-315.9721 | avg_water=41.3 | avg_dev=0.5307 | stats=-
+  Saved -> /Users/vaidhav/Downloads/farm_rl/submission/results/ppo.json
+
+======================================================================
+Agent                    Avg Reward  Avg Water    Avg Dev
+----------------------------------------------------------------------
+Q-Learning                -269.2429       30.8     0.5062
+SARSA                     -266.2937       29.7     0.5075
+DQN                       -228.0076       22.0     0.4856
+REINFORCE-vanilla         -327.2275       45.7     0.5317
+REINFORCE-baseline        -349.7069        0.0     0.6671
+Actor-Critic              -503.6456       90.0     0.5962
+PPO                       -320.6242       42.4     0.5350
+======================================================================
+
+JSON logs: /Users/vaidhav/Downloads/farm_rl/submission/results/
